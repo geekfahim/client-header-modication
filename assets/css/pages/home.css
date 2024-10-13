@@ -1,0 +1,186 @@
+.network-map {
+    position: relative;
+}
+
+.network-map ul {
+    margin: 0 !important;
+    list-style-type: none;
+}
+
+.network-map ul li {
+   position: absolute;
+   z-index: 1;
+   width: 6px;
+   height: 6px;
+   margin: -6px;
+   background-color: black;
+   border-radius: 6px
+}
+
+.network-map ul li a {
+   display: block;
+   width: 12px;
+   height: 12px
+}
+
+.network-map ul li span.label-bottom-left,
+.network-map ul li span.label-bottom-right,
+.network-map ul li span.label-top-left,
+.network-map ul li span.label-top-right {
+   position: absolute;
+   color: #fff;
+   padding: 4px 8px;
+   margin-top: -8px;
+   line-height: 20px;
+   font-size: 14px;
+   white-space: nowrap;
+   font-family: Montserrat, sans-serif;
+   background-color:black;
+   border-radius: 4px;
+   -webkit-transition: color .2s;
+   transition: color .2s
+}
+
+.network-map ul li a:hover span.label-bottom-left,
+.network-map ul li a:hover span.label-bottom-right,
+.network-map ul li a:hover span.label-top-left,
+.network-map ul li a:hover span.label-top-right {
+   color: rgba(255, 255, 255, .6);
+   text-decoration: none
+}
+
+.network-map ul li span.label-top-left {
+   top: -32px;
+   right: 24px
+}
+
+.network-map ul li span.label-top-right {
+   top: -32px;
+   left: 24px
+}
+
+.network-map ul li span.label-bottom-left {
+   bottom: -40px;
+   right: 24px
+}
+
+.network-map ul li span.label-bottom-right {
+   bottom: -40px;
+   left: 24px
+}
+
+.network-map ul li span.label-bottom-left::before,
+.network-map ul li span.label-bottom-right::before,
+.network-map ul li span.label-top-left::before,
+.network-map ul li span.label-top-right::before {
+   content: "";
+   position: absolute;
+   width: 24px;
+   height: 1px;
+   background-color: black
+}
+
+.network-map ul li span.label-bottom-right::before,
+.network-map ul li span.label-top-left::before {
+   -webkit-transform: rotate(45deg);
+   transform: rotate(45deg)
+}
+
+.network-map ul li span.label-bottom-left::before,
+.network-map ul li span.label-top-right::before {
+   -webkit-transform: rotate(-45deg);
+   transform: rotate(-45deg)
+}
+
+.network-map ul li span.label-top-left::before {
+   top: 34px;
+   right: -23px
+}
+
+.network-map ul li span.label-top-right::before {
+   top: 34px;
+   left: -23px
+}
+
+.network-map ul li span.label-bottom-left::before {
+   top: -6px;
+   right: -23px
+}
+
+.network-map ul li span.label-bottom-right::before {
+   top: -6px;
+   left: -23px
+}
+
+.network-map img {
+   display: block;
+   width: 100%;
+   opacity: .6;
+}
+
+.card-3d {
+       height: 300px; /* set the height of the card */
+       border-radius: 15px; /* set the radius of the card border */
+       border-bottom: 5px solid #1B1464;
+       box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+       transition: all 0.3s ease-in-out;
+       overflow: hidden; /* ensure the content doesn't overflow the card */
+   }
+
+   .card-3d:hover {
+       transform: scale(1.05);
+       box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+   }
+
+   .triangle-bottom {
+   position: relative;
+}
+
+.triangle-bottom::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 100px;
+   background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+   transform: scaleY(0.5);
+   transform-origin: bottom;
+}
+.payment-cards {
+   margin-left: 0.5rem;
+   width: 80;
+   height: 40;
+   background-color: rgba(255, 255, 255, 0.1);
+   border-radius: 5px;
+ }
+
+.radius {
+   border-bottom-left-radius: 50% 4%;
+   border-bottom-right-radius: 50% 4%;
+   background: linear-gradient(75deg,#073482,#014cda);
+   width: 100%;
+   height:90%;
+}
+
+.footer-icon {
+   text-decoration: none!important;
+}
+
+.list-item {
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   color: #fff;
+}
+.list-item svg {
+   background-color: rgba(255, 255, 255, 0.1);
+   padding: 3px;
+   border-radius: 50%;
+   margin-right: 0.5rem;
+}
+
+
+.ptb-30 {
+   padding-top: 30px;
+   padding-bottom: 30px;
+ }

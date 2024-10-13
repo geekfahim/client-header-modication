@@ -1,0 +1,58 @@
+:root {
+    -color-blue: #1e90ff;
+    -color-blue-dark: #1c7ed6;
+    -color-blue-light: #1e90ff;
+    -color-blue-lighter: #1e90ff;
+
+    -color-green: #00b300;
+    -color-green-dark: #008000;
+    -color-green-light: #00b300;
+    -color-green-lighter: #00b300;
+
+    -color-red: #ff0000;
+    -color-red-dark: #cc0000;
+    -color-red-light: #ff0000;
+}
+
+
+.mg-tp-10 {
+    margin-top: 10px;
+}
+
+.mg-tp-20 {
+    margin-top: 20px;
+}
+
+
+.wd-100 {
+    width: 100%;
+}
+
+.wd-50 {
+    width: 50%;
+}
+
+.hg-100 {
+    height: 100%;
+}
+
+.hg-50 {
+    height: 50%;
+}
+
+.hgvh-100 {
+    height: 100vh;
+}
+
+.dp-fl-ct {
+    display: flex;
+    align-items: center;
+}
+
+.dp-fl {
+    display: flex;
+}
+
+.flx-1 {
+    flex: 1;
+}

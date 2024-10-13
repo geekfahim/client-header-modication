@@ -1,0 +1,19 @@
+.sur-header {
+    width: 100%;
+    height: 40px;
+    background: black;
+    display: flex;
+    align-content: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+.sur-header .sub-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 0 20px;
+}

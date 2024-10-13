@@ -1,0 +1,34 @@
+[
+    {
+        "id": "1",
+        "photo": "/assets/images/icons_tweb_library/vps/linux.svg",
+        "titre": "VPS Linux",
+        "desc": "VPS Linux, Ubuntu, Debian, Centos, Fedora, ArchLinux, OpenSuse...",
+        "href": "lien1.html",
+        "keywords": ["Vps SSD", "Baptiste", "Vps SSD", "anti ddos"]
+    },
+    {
+        "id": "VPS Windows",
+        "photo": "/assets/images/icons_tweb_library/vps/windows.svg",
+        "titre": "Vps SSD",
+        "desc": "VPS Windows (RDP), hautes disponibilités OS Windows Server 2012, 2016, 2019...",
+        "href": "lien1.html",
+        "keywords": []
+    },
+    {
+        "id": "VPS Stockage",
+        "photo": "/assets/images/icons_tweb_library/vps/storage.svg",
+        "titre": "VPS Stockage",
+        "desc": "VPS Stockage, Uptime 100%, stockage de vos données en ligne...",
+        "href": "lien1.html",
+        "keywords": ["Vps SSD", "Vps HDD", "Vps Stockage", "anti ddos", "enzo"]
+    },
+    {
+        "id": "Revendeur VPS Budget",
+        "photo": "/assets/images/icons_tweb_library/vps/storage.svg",
+        "titre": "Revendeur VPS Budget",
+        "desc": "Revendeur VPS Budget, revendez nos VPS à vos clients...",
+        "href": "lien1.html",
+        "keywords": ["Revendeur VPS", "VPS", "Serveur dédié"]
+    }
+]

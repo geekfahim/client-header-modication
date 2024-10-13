@@ -1,0 +1,66 @@
+.reseauDDoS {
+    width: 100%;
+    height: 25rem;
+}
+
+.reseauDDoS .ct {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.reseauDDoS .ct .partLeft,
+.reseauDDoS .ct .partRight {
+    width: 47%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reseauDDoS .ct .partLeft .text h4 {
+    font-size: 0.9rem;
+    color: red;
+}
+
+.reseauDDoS .ct .partLeft img,
+.reseauDDoS .ct .partRight img {
+    width: 90%;
+    max-width: 100%; 
+}
+
+.reseauDDoS .ct .partRight .text h4 {
+    font-size: 0.9rem;
+    color: green;
+}
+
+@media screen and (max-width: 968px) {
+    .reseauDDoS {
+        height: 55rem;
+    }
+    .reseauDDoS .ct .partLeft,
+    .reseauDDoS .ct .partRight {
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .reseauDDoS .ct {
+        flex-direction: column; 
+    }
+
+    .reseauDDoS .ct .partLeft,
+    .reseauDDoS .ct .partRight {
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 1rem; 
+    }
+}
+
+.btn-orange {
+    background-color: orange;
+    color: white;
+    border: none;
+}

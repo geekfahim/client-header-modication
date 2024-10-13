@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RW Générateur de MDP</title>
+    <style>
+ body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0949b2, #007eeb);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            width: 80%;
+            max-width: 400px;
+            background-color: rgba(0,0,0,0.1);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        label, input[type="checkbox"] {
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: rgba(255,255,255,0.8);
+            color: #0949b2;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: white;
+            color: #0949b2;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+        button:hover {
+            background-color: #5fa5e5;
+            color: white;
+            transform: translateY(-2px);
+        }
+        button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RW Générateur de MDP</h1>
+        <label for="passwordLength">Longueur de MDP (1 à 100):</label>
+        <input type="number" id="passwordLength" min="1" max="100" value="12">
+        <br>
+        <label>
+            <input type="checkbox" id="includeUppercase"> Majuscules
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="includeDigits"> Chiffres
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="includeSymbols"> Caractères spéciaux
+        </label>
+        <br>
+        <input type="text" id="password" readonly>
+        <br>
+        <button onclick="generatePassword()">Générer MDP</button>
+        <button onclick="copyPassword()">Copier</button>
+    </div>
+    <script>
+        function generatePassword() {
+            const passwordLength = parseInt(document.getElementById('passwordLength').value);
+            const includeUppercase = document.getElementById('includeUppercase').checked;
+            const includeDigits = document.getElementById('includeDigits').checked;
+            const includeSymbols = document.getElementById('includeSymbols').checked;
+            let charset = 'abcdefghijklmnopqrstuvwxyz';
+
+            if (includeUppercase) {
+                charset += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            }
+            if (includeDigits) {
+                charset += '0123456789';
+            }
+            if (includeSymbols) {
+                charset += '!@#$%^&*()-=_+';
+            }
+
+            let password = '';
+            for (let i = 0; i < passwordLength; i++) {
+                const randomIndex = Math.floor(Math.random() * charset.length);
+                password += charset[randomIndex];
+            }
+            document.getElementById('password').value = password;
+        }
+
+        function copyPassword() {
+            const passwordInput = document.getElementById('password');
+            passwordInput.select();
+            passwordInput.setSelectionRange(0, 99999); // For mobile devices
+            document.execCommand('copy');
+            alert('Mot de passe copié dans le presse-papiers!');
+        }
+    </script>
+</body>
+</html>
