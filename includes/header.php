@@ -1,3 +1,7 @@
+<?php 
+$baseUrl='http://localhost/website/'
+
+?>
 <html dir="ltr" lang="<?php echo $language["htmlLang"]?>">
 <head>
     <meta charset="UTF-8">
@@ -24,13 +28,13 @@
     <meta name="twitter:title" content="<?php echo $pagetitle ?>">
     <meta name="twitter:description" content="<?php echo $pagedescription?>">
     <meta name="robots" content="max-image-preview:large">
-    <link rel="icon" href="/assets/images/icon.ico" type="image/png" sizes="16x16">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/pages/home.css">
-    <link rel="stylesheet" href="/assets/css/pages/plesk.css">
-    <link rel="stylesheet" href="/assets/css/pages/dedicated.css">
-    <link rel="stylesheet" href="/assets/css/pages/good.css">
-    <link rel="stylesheet" href="/assets/css/compact.css">
+    <link rel="icon" href="<?php echo $baseUrl; ?>/assets/images/icon.ico" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/main.css">
+    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/pages/home.css">
+    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/pages/plesk.css">
+    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/pages/dedicated.css">
+    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/pages/good.css">
+    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/compact.css">
     <link rel="canonical" href="<?php echo $fullUrl ?>" />
 
     <script type="application/ld+json">
@@ -48,8 +52,6 @@
             }
         }
     </script>
-
-
 
     <?php
     require_once __DIR__ . '/config-metadata.php';  
@@ -2292,7 +2294,7 @@ window.CookieConsent.init({
             <div class="spacer-header tweb-content-a-center">
                 <div class="logo">
                     <a href="/home?lang=<?php echo $language["htmlLang"]?>">
-                        <img src="/assets/images/logos/visuhost_bann.webp" title="<?php echo $language["up4"]?>" alt="<?php echo $language["up4"]?>">
+                        <img src="<?php echo $baseUrl; ?>/assets/images/logos/visuhost_bann.webp" title="<?php echo $language["up4"]?>" alt="<?php echo $language["up4"]?>">
                     </a>
                 </div>
                 <div  class="menu">
