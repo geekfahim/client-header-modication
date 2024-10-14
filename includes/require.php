@@ -1,7 +1,7 @@
 <?php
 
 
-include './../testapi/getproducts.php';
+// include './../testapi/getproducts.php';
 
 
 
