@@ -3097,12 +3097,15 @@ $baseUrl = 'http://localhost/website/'
                                 </div>
                                 <div class="">
                                     <ul>
-                                        <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS
+                                        <li><i class="fa-brands fa-whmcs dropdown-menu-icon"></i><a
+                                                    class="dropdown-list" href="#">VPS
                                                 LINUX</a></li>
-                                        <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS
+                                        <li><i class="fa-brands fa-windows dropdown-menu-icon"></i><a
+                                                    class="dropdown-list" href="#">VPS
                                                 WINDOWS</a>
                                         </li>
-                                        <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS
+                                        <li><i class="fa-brands fa-windows dropdown-menu-icon"></i><a
+                                                    class="dropdown-list" href="#">VPS
                                                 STOCKAGE</a>
                                         </li>
                                     </ul>
@@ -3117,21 +3120,32 @@ $baseUrl = 'http://localhost/website/'
                             Dedicated Servers
                         </a>
                         <ul class="dropdown-click" aria-labelledby="dedicatedServersDropdown">
-                            <li class="rwdropdown-list"><i class="fa-brands fa-windows"></i><a class="dropdown-list"
-                                                                                               href="#">DEDICATED SERVER
-                                    AMD EPYC</a></li>
-                            <li class="rwdropdown-list"><i class="fa-brands fa-windows"></i><a class="dropdown-list"
-                                                                                               href="#">DEDICATED SERVER
-                                    INTEL XEON</a></li>
-                            <li class="rwdropdown-list"><i class="fa-brands fa-windows"></i><a class="dropdown-list"
-                                                                                               href="#">DEDICATED SERVER
-                                    AND RYZEN</a></li>
-                            <li class="rwdropdown-list"><i class="fa-brands fa-windows"></i><a class="dropdown-list"
-                                                                                               href="#">DEDICATED SERVER
-                                    INTEL CORE</a></li>
-                            <li class="rwdropdown-list"><i class="fa-brands fa-windows"></i><a class="dropdown-list"
-                                                                                               href="#">OUTLED DEDICATED
-                                    SERVER</a></li>
+                            <li class="rwdropdown-list">
+                                <img class="svg"
+                                     src="<?php echo $baseUrl; ?>/assets/images/header-svg/dedicated-server.svg" alt="">
+                                <a class="dropdown-list"
+                                   href="#">DEDICATED SERVER
+                                    <br>
+                                    <span class="font-weight-lighter small-text">Maximum computing power, starting at $0.8</span>
+                                </a>
+                            </li>
+                            <li class="rwdropdown-list">
+                                <img class="svg" src="<?php echo $baseUrl; ?>/assets/images/header-svg/vds.svg" alt="">
+                                <a class="dropdown-list"
+                                   href="#">Cloud VDS SERVER
+                                    <br>
+                                    <span class="font-weight-lighter small-text">Maximum computing power, starting at $0.8</span>
+                                </a>
+                            </li>
+                            <li class="rwdropdown-list">
+                                <img class="svg"
+                                     src="<?php echo $baseUrl; ?>/assets/images/header-svg/outlet-server.svg" alt="">
+                                <a class="dropdown-list"
+                                   href="#">Outlet SERVER
+                                    <br>
+                                    <span class="font-weight-lighter small-text">Maximum computing power, starting at $0.8</span>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">

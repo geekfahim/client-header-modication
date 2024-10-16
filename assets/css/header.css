@@ -103,6 +103,7 @@ body {
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade and slide down effect */
     /* width: 50vw; */
+    font-size: 16px;
 }
 
 .dropdown-click li {
@@ -124,7 +125,7 @@ body {
 
 .dropdown-click li a {
     color: black;
-    font-size: 12px;
+    font-size: 16px;
     text-decoration: none;
 }
 
@@ -169,7 +170,12 @@ body {
 .dropdown-banner img{
     width:100% !important
 }
-
+.dropdown-click .svg{
+    width: 35px;
+}
+.dropdown-menu-icon{
+    font-size: 12px;
+}
 @media (max-width: 960px) {
     .contabo .navigation-div {
         display: flex;
