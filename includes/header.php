@@ -3025,7 +3025,7 @@ $baseUrl = 'http://localhost/website/'
                 <div class="header-link">
                     <a href="#" class="text-muted me-3 header-text">Help</a>
                     <a href="#" class="text-muted me-3 header-text"> Log In</a>
-                    <a id="btncallphone" class="btn btn-outline-brand-01"
+                    <a class="text-muted me-3 header-text"
                        href="https://cp.visuhost.com/login"><?php echo $language["up3"] ?></a>
                 </div>
             </div>
@@ -3053,15 +3053,63 @@ $baseUrl = 'http://localhost/website/'
                     <li class="nav-item dropdown">
                         <a class="nav-link text-primary dropdown-toggle" href="#" id="vpsDropdown" role="button"
                            data-bs-toggle="dropdown" aria-expanded="false">
-                            VPS
+                            VPS1
                         </a>
-                        <ul class="dropdown-click" aria-labelledby="vpsDropdown">
-                            <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS LINUX</a></li>
-                            <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS WINDOWS</a>
-                            </li>
-                            <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS STOCKAGE</a>
-                            </li>
-                        </ul>
+                        <div class="dropdown-click" aria-labelledby="vpsDropdown">
+                            <div class="d-flex">
+                                <div class="">
+                                    <ul>
+                                        <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS
+                                                LINUX</a></li>
+                                        <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS
+                                                WINDOWS</a>
+                                        </li>
+                                        <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS
+                                                STOCKAGE</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="">
+                                    <ul>
+                                        <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS
+                                                LINUX</a></li>
+                                        <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS
+                                                WINDOWS</a>
+                                        </li>
+                                        <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS
+                                                STOCKAGE</a>
+                                        </li>
+                                    </ul>
+                                </div
+                                >
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-primary dropdown-toggle" href="#" id="vpsDropdownBanner" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            VPS Banner
+                        </a>
+                        <div class="dropdown-click" aria-labelledby="vpsDropdownBanner">
+                            <div class="d-flex">
+                                <div class="dropdown-banner">
+                                    <img src="<?php echo $baseUrl; ?>/assets/images/banniere/ryzen9.webp" alt="">
+                                </div>
+                                <div class="">
+                                    <ul>
+                                        <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS
+                                                LINUX</a></li>
+                                        <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS
+                                                WINDOWS</a>
+                                        </li>
+                                        <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS
+                                                STOCKAGE</a>
+                                        </li>
+                                    </ul>
+                                </div
+                                >
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link text-primary dropdown-toggle" href="#" id="dedicatedServersDropdown"
