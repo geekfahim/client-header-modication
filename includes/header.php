@@ -3055,29 +3055,66 @@ $baseUrl = 'http://localhost/website/'
                            data-bs-toggle="dropdown" aria-expanded="false">
                             VPS1
                         </a>
-                        <div class="dropdown-click" aria-labelledby="vpsDropdown">
+                        <div class="dropdown-click pa-20" aria-labelledby="vpsDropdown">
                             <div class="d-flex">
                                 <div class="">
                                     <ul>
-                                        <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS
-                                                LINUX</a></li>
-                                        <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS
-                                                WINDOWS</a>
+                                        <li class="rwdropdown-list">
+                                            <img class="svg"
+                                                 src="<?php echo $baseUrl; ?>/assets/images/header-svg/cloud-vps.svg" alt="">
+                                            <a class="dropdown-list"
+                                               href="#">Cloud  VPS
+                                                <br>
+                                                <span class="font-weight-lighter small-text">Maximum computing power, starting at $41</span>
+                                            </a>
                                         </li>
-                                        <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS
-                                                STOCKAGE</a>
+                                        <li class="rwdropdown-list">
+                                            <img class="svg"
+                                                 src="<?php echo $baseUrl; ?>/assets/images/header-svg/storage-vps.svg" alt="">
+                                            <a class="dropdown-list"
+                                               href="#">Storage VPS
+                                                <br>
+                                                <span class="font-weight-lighter small-text">Lots of SSD storage,starting at $5.8</span>
+                                            </a>
+                                        </li>
+                                        <li class="rwdropdown-list">
+                                            <img class="svg"
+                                                 src="<?php echo $baseUrl; ?>/assets/images/header-svg/cpanel-server.svg" alt="">
+                                            <a class="dropdown-list"
+                                               href="#">Cpanel VPS
+                                                <br>
+                                                <span class="font-weight-lighter small-text">Maximum computing power, starting at $5.8</span>
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="">
-                                    <ul>
-                                        <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS
-                                                LINUX</a></li>
-                                        <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS
-                                                WINDOWS</a>
+                                <div class="bg-light d-flex">
+                                    <ul class="light-menu-content">
+                                        <small>DEVOPS FEATURES</small>
+                                        <li><a class="small-text" href="#">Visuhost
+                                                API</a></li>
+                                        <li><a class="small-text" href="#">Visuhost
+                                                CLI</a>
                                         </li>
-                                        <li><i class="fa-brands fa-windows"></i><a class="dropdown-list" href="#">VPS
-                                                STOCKAGE</a>
+                                        <li><a class="small-text" href="#">Visuhost
+                                                Images</a>
+                                        </li>
+                                        <li><a class="small-text" href="#">Visuhost
+                                                Cloud-init</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="light-menu-content">
+                                        <small>Networking FEATURES</small>
+                                        <li><a class="small-text" href="#">Visuhost
+                                                API</a></li>
+                                        <li><a class="small-text" href="#">Visuhost
+                                                CLI</a>
+                                        </li>
+                                        <li><a class="small-text" href="#">Visuhost
+                                                Images</a>
+                                        </li>
+                                        <li><a class="small-text" href="#">Visuhost
+                                                Cloud-init</a>
                                         </li>
                                     </ul>
                                 </div
@@ -3154,9 +3191,30 @@ $baseUrl = 'http://localhost/website/'
                             More Products
                         </a>
                         <ul class="dropdown-click" aria-labelledby="moreProductsDropdown">
-                            <li><i class="fa-brands fa-product-hunt"></i><a class="dropdown-list" href="#">Product 1</a>
+                            <li>
+                                <img class="svg"
+                                     src="<?php echo $baseUrl; ?>/assets/images/header-svg/object.svg" alt="">
+                                <a class="dropdown-list" href="#">Object Storage</a>
                             </li>
-                            <li><i class="fa-brands fa-product-hunt"></i><a class="dropdown-list" href="#">Product 2</a>
+                            <li>
+                                <img class="svg"
+                                     src="<?php echo $baseUrl; ?>/assets/images/header-svg/winddow.svg" alt="">
+                                <a class="dropdown-list" href="#">Windows</a>
+                            </li>
+                            <li>
+                                <img class="svg"
+                                     src="<?php echo $baseUrl; ?>/assets/images/header-svg/plesk.svg" alt="">
+                                <a class="dropdown-list" href="#">Plesk Storage</a>
+                            </li>
+                            <li>
+                                <img class="svg"
+                                     src="<?php echo $baseUrl; ?>/assets/images/header-svg/domain.svg" alt="">
+                                <a class="dropdown-list" href="#">Domain</a>
+                            </li>
+                            <li>
+                                <img class="svg"
+                                     src="<?php echo $baseUrl; ?>/assets/images/header-svg/cpanel-server.svg" alt="">
+                                <a class="dropdown-list" href="#">Cpanel</a>
                             </li>
                         </ul>
                     </li>

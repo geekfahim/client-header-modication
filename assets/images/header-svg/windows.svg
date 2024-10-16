@@ -1,0 +1,13 @@
+<svg id="Icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 31">
+    <defs>
+        <style>
+            .cls-windows {
+            fill: #323c46;
+            stroke-width: 0px;
+            }
+        </style>
+    </defs>
+    <g id="Windows_Outline" data-name="Windows Outline">
+        <path class="cls-windows" d="M7.68,14.79V5.94l10.9-1.5v10.35H7.68ZM34.32,14.79V2.13l-14.44,2.11v10.55h14.44ZM19.89,26.82l14.44,2.05v-12.64h-14.44v10.59ZM7.68,16.21v8.93l10.9,1.51v-10.44H7.68Z"></path>
+    </g>
+</svg>
